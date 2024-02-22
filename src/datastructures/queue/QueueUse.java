@@ -5,16 +5,17 @@ public class QueueUse {
 	public static void main(String[] args) throws QueueEmptyException {
 		// TODO Auto-generated method stub
 		
-		QueueUsingArray queue=new QueueUsingArray();
+		QueueUsingArray queue1=new QueueUsingArray();
+		QueuesUsingLinkedList queue=new QueuesUsingLinkedList();
 		
 		int[] example= {10,20,30,40};
 		for (int ele:example) {
-			try {
+			//try {
 				queue.enque(ele);
-			} catch (QueueFullException e) {
+			//} catch (QueueFullException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+				//e.printStackTrace();
+			//}
 			
 		}
 		System.out.println(queue.size());
@@ -22,7 +23,7 @@ public class QueueUse {
 		queue.deque();
 		System.out.println(queue.size());
 		
-		try {
+		//try {
 			queue.enque(50);
 			System.out.println(queue.size());
 			queue.enque(60);
@@ -33,10 +34,10 @@ public class QueueUse {
 			System.out.println(queue.size());
 			
 			
-		} catch (QueueFullException e) {
+		//} catch (QueueFullException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			//e.printStackTrace();
+		//}
 		
 
 	}
